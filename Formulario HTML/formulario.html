@@ -1,0 +1,89 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FORMULARIO HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <H1> <b>Formulário de Cadastro</b></H1>
+
+    <form action='servidor.php' method='POST'>
+        <p>
+           <b> Nome Completo</b> <input type="text"
+            name='Nome Completo'
+            placeholder="Informe seu nome completo">
+        </p>
+        <p>
+            <b>E-mail</b> <input type='email'
+            name='Email Valido'
+            placeholder="Informe um e-mail valido">
+        </p>
+        <p>
+            <b>Sexo</b> <input type="radio" name "sexo" id="masculino" value="Masculino">
+            <label for="Masculino">Masculino</label><br>
+            <input type="radio" name "sexo" id="feminino" value="Feminino">
+            <label for="Feminino">Feminino</label><br>            
+        </p>
+        <p>
+            <b>Data de Nascimento:</b>
+            <input type'date'
+            placeholder='DD/MM/YYYY'
+            name="dataNascimento"><br>
+        </p>
+        <p>
+            <b>Grau de Escolaridade</b>
+            <select name="Grau de Escolaridade" size="1">
+                <option value="Ensino Medio">Ensino Medio</option>
+                <option value="Superior Completo">Superior Completo</option>
+                <option value="Pós Graduação">Pós Graduação</option>
+                <option value="Mestrado">Mestrado</option>
+                <option value="Doutorado">Doutorado</option>
+                <option value="Superior Completo" selected='true'>Superior Completo</option>
+            </select>
+        </p>
+        <p>
+            <b>Estilos Musicais preferidos</b> <textarea cols="20" rows="10" name='Comentários'>
+                    Rock
+                    Funk
+                    Samba
+                    Pagode
+                    Pop
+                </textarea>
+        </p>
+        <p>
+            <b>Nome de Usuário:</b> <input type="text">
+        </p>
+        <p>
+           <b>Senha:</b>  <input type="password">
+        </p>
+        <p>
+           <b>Cor Preferida:</b>  <input type="color">
+        </p>
+        <p>
+           <b>Quantidade de Filhos :</b>  <input type="number">
+        </p>
+        <p>
+            <b>Quantidade de Veiculos:</b> 1<input type="range"> 5
+        </p>
+        <p>
+           <b>Comentarios sobre o site:</b>  <textarea cols="20" rows="10" name='Comentários'>
+                Digite o seu comentário: 
+            </textarea>
+
+          
+        </p>
+        <p>
+        <b>Desejo receber ofertas via e-mail</b> <input type="checkbox" value="button" >
+    </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reiniciar">
+    </form>
+
+    
+</body>
+</html>
