@@ -15,7 +15,7 @@
     <form action='servidor.php' method='POST'>
         <p>
            <b> Nome Completo</b> <input type="text"
-            name='Nome Completo'
+            requirid name='Nome Completo'
             placeholder="Informe seu nome completo">
         </p>
         <p>
@@ -46,14 +46,15 @@
             </select>
         </p>
         <p>
-            <b>Estilos Musicais preferidos</b> <textarea cols="20" rows="10" name='Comentários'>
-                    Rock
-                    Funk
-                    Samba
-                    Pagode
-                    Pop
-                </textarea>
+            <b>Estilo Musical Preferidos:</b>  <select name="EstiloMusical" id="Musicas" multiple size='5'>
+				<option value="R">Rock</option>
+				<option value="F">Funk</option>
+				<option value="S">Samba</option>
+				<option value="PA">Pagode</option>
+                <option value="P">Pop</option>
+                </select>
         </p>
+        
         <p>
             <b>Nome de Usuário:</b> <input type="text">
         </p>
